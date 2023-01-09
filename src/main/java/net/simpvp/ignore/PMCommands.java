@@ -47,7 +47,7 @@ public class PMCommands implements CommandExecutor {
 		}
 
 		UUID utarget;
-		if (cmd.getName().equalsIgnoreCase("m")) {
+		if (cmd.getName().equalsIgnoreCase("m") || cmd.getName().equalsIgnoreCase("l")) {
 			if (!mPlayerList.containsKey(uplayer)) {
 				TextComponent m = new TextComponent("You have not sent any PMs yet.");
 				m.setColor(ChatColor.RED);
